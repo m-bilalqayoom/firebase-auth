@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="app.js"> </script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBSL7m1hlQ2pgOgbKKxHSm-kwhRknwti1k",
+    authDomain: "my-project-data-a05cd.firebaseapp.com",
+    databaseURL: "https://my-project-data-a05cd.firebaseio.com",
+    projectId: "my-project-data-a05cd",
+    storageBucket: "my-project-data-a05cd.appspot.com",
+    messagingSenderId: "351887167169"
+  };
+  firebase.initializeApp(config);
+</script>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+        
+            <div class="container">
+                <label><b>Name</b></label>
+                <input type="text" placeholder="Name here" name="username" id="username" required>
+                
+             <label><b>Contact no</b></label>
+             <input type="text" placeholder="Phone no." name="cell" id="cellnumber" required>
+                
+                <label><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+          
+              <label><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="passwordrepeat" required>
+             
+             
+          
+              <div class="clearfix">
+                
+                <button  class="signupbtn" onclick="signup()"> Sign Up</button>
+              </div>
+            </div>
+            <div class ="alert alert-danger" id="custom-error">
+              <strong>Error</strong> something went wrong
+            </div>
+        
+    
+</body>
+</html>
